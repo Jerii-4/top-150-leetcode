@@ -15,7 +15,8 @@ void reverse(int* num,int start, int end){ //first create a reverse function
 void rotate(int* nums, int numsSize, int k) {
    
        k=k%numsSize; // if k<numsSize
-    reverse(nums,0,numsSize-1);
-    reverse(nums,0,k-1);
-    reverse(nums,k,numsSize-1);
+    reverse(nums,0,numsSize-1); //reverses entire array
+    reverse(nums,0,k-1); //revrese back until k
+    reverse(nums,k,numsSize-1); //reverse back rest
+    
 }
