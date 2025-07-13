@@ -1,3 +1,5 @@
+//easy
+
 int majorityElement(int* nums, int numsSize) {
     int i,candidate,count=0;
     for( i = 0; i < numsSize; i++){

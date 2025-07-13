@@ -1,3 +1,4 @@
+// medium
 int removeDuplicates(int* nums, int numsSize) {
     
     int i,k=2; //first 2 elemnts will be unique

@@ -1,3 +1,5 @@
+//easy
+
 int removeDuplicates(int* nums, int numsSize) {
     int i,k=1; //k=1 sincwe first inpuy will be uniwuw
     for (i=1;i<numsSize;i++){

@@ -1,3 +1,6 @@
+
+// medium
+
 void reverse(int* num,int start, int end){ //first create a reverse function
     int temp;
     while(start<end){ // while until start=end
