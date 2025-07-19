@@ -1,12 +1,18 @@
-bool canJump(int* nums, int numsSize) {
-    int i,goal=numsSize-1; //start from the last index
-for (i=numsSize-2;i>=0;i--){ traverse from last-1
-    if(i+nums[i]>=goal){ // if the index and itys maximum jump,i.e the value is greater than or equal to goal then
-        goal=i; //i will be the new goal
+int jump(int* nums, int numsSize) {
+    int jumps = 0; //total no of jumps
+    int farthest = 0; // for the farthest jump
+    int End = 0; // no of jumps the current value can take you
+
+    for (int i = 0; i < numsSize - 1; i++) {
+        if (i + nums[i] > farthest) { //if the current i and its value is bigger than farthest
+            farthest = i + nums[i]; //update that as new farthest
+        }
+
+        if (i == End) { //checks if you reaches the maximum point
+            jumps++; //then jump increments
+            End = farthest; //the current farthest value become the end
+        }
     }
-}
-if(goal==0){ //if the goal reaches 0 then true else false
-    return true;
-}
-return false;
+
+    return jumps; // returns miminum number of jumps
 }

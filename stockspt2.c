@@ -2,7 +2,7 @@ int maxProfit(int* prices, int pricesSize) {
     int buy=prices[0];
     int profit =0;
     for(int i=0;i<pricesSize;i++){ 
-        if(buy<prices[i]){ // checks if the buy is smaller then 
+        if(buy<prices[i]){ // checks if the buy is larger then curent price 
             profit+=prices[i]-buy; // add the profits
         }
 
