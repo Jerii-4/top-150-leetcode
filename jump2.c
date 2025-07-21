@@ -1,3 +1,4 @@
+//medium
 int jump(int* nums, int numsSize) {
     int jumps = 0; //total no of jumps
     int farthest = 0; // for the farthest jump

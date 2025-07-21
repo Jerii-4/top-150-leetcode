@@ -1,3 +1,4 @@
+// easy
 bool canJump(int* nums, int numsSize) {
     int i,goal=numsSize-1; //start from the last index
 for (i=numsSize-2;i>=0;i--){ traverse from last-1

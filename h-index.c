@@ -1,3 +1,5 @@
+//medium
+
 int hIndex(int* citations, int citationsSize) {
     for(int i=0;i<citationsSize-1;i++){
         for(int j=0;j<citationsSize-i-1;j++){

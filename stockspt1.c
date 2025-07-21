@@ -1,3 +1,5 @@
+//easy
+
 int maxProfit(int* prices, int pricesSize) {
     int buy=prices[0]; // initilase as 0 becuase we are assuming its the lowest prize
     int profit= 0;

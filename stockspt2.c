@@ -1,3 +1,5 @@
+
+// medium
 int maxProfit(int* prices, int pricesSize) {
     int buy=prices[0];
     int profit =0;
